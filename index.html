@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG - Pinturas e reformas</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+
+        <div class="container">
+          <a href="https://wa.me/5511915847733" class="helpline-box">
+            <div class="icon-box" style="background-color: var(--orange-light)">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">Para mais informações:</p>
+
+              <p class="helpline-number">(11) 91584-7733</p>
+            </div>
+          </a>
+
+          <a href="#home" class="logo">
+            <img src="imagens/rag-logo.png" />
+          </a>
+
+          <div class="header-btn-group">
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/rag_oficial?igsh=YWtiN2pvdTU3a2Jj"
+                class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/5511915847733" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#home" class="logo">
+                <img src="imagens/rag-logo.png" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Início</a>
+              </li>
+
+              <li>
+                <a href="#sobre" class="navbar-link" data-nav-link>Sobre</a>
+              </li>
+
+              <li>
+                <a href="#services" class="navbar-link" data-nav-link
+                  >Serviços</a
+                >
+              </li>
+
+              <li>
+                <a href="#projects" class="navbar-link" data-nav-link
+                  >Projetos</a
+                >
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>Contato</a>
+              </li>
+
+              <li>
+                <a href="#testemonials" class="navbar-link" data-nav-link
+                  >Depoimentos</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <a
+            href="https://wa.me/5511915847733?text=Olá+Gilson,+tudo+bem?+Eu+gostaria+de+agendar+um+horário!+">
+            <button
+              class="btn btn-primary">
+              Agendar
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <article>
+        <!-- ////////////////////////// hero ////////////////////////// -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">
+              Soluções inteligentes para projetos que inspiram
+            </h2>
+            <p class="hero-text">
+              Em cada projeto, embarcamos em uma jornada única, desbravando
+              novos horizontes e transformando sonhos em realidade. Construir é
+              conectar sonhos com a realidade, em cada detalhe e experiência.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Saiba mais</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ////////////////////////// sobre ////////////////////////// -->
+
+        <section
+          class="section feature"
+          aria-labelledby="feature-label"
+          id="sobre">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="imagens/sobre-img.avif"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="Banner de recursos"
+                class="w-100" />
+            </figure>
+
+            <div class="feature-content">
+
+              <div class="sobre-title">
+                <p class="sobre-subtitle" id="feature-label">
+                  Do Alicerce à Chave na Mão:
+                </p>
+
+                <h2>
+                  Com anos de experiência e um legado de construções sólidas,
+                  transformamos seus projetos em realidade.
+                </h2>
+              </div>
+
+              <p class="sobre-text">
+                Com nossa expertise, garantimos que você tenha total controle
+                sobre seu projeto. Nossa missão é simplificar sua jornada de
+                construção.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span class="span"
+                      >Oferecemos soluções personalizadas para cada
+                      cliente.</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span class="span">
+                      Garantimos segurança e privacidade em todos os projetos.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span class="span"
+                      >Nossa equipe está sempre pronta para ajudar.</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span class="span"
+                      >Oferecemos relatórios detalhados para melhor
+                      acompanhamento.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ////////////////////////// Serviços ////////////////////////// -->
+
+        <section
+          class="section service"
+          aria-labelledby="service-label"
+          id="services">
+
+          <div class="container">
+
+            <div class="service-subtitle">
+              <p id="service-label">O que fazemos?</p>
+            </div>
+
+            <div class="service-title">
+              <h2>
+                O serviço que oferecemos é especificamente projetado para
+                atender às suas necessidades.
+              </h2>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Pintura Residencial e Comercial</h3>
+
+                  <p class="card-text">
+                    Cores vibrantes, ambientes renovados, qualidade e
+                    durabilidade em cada pincelada.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fa fa-home"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">Reformas Residenciais Completas</h3>
+
+                  <p class="card-text">
+                    Transformamos seu lar: do planejamento ao acabamento,
+                    qualidade e conforto em cada detalhe.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fas fa-screwdriver"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    Acabamentos, restaurações e Detalhes
+                  </h3>
+
+                  <p class="card-text">
+                    Precisão, cuidado, sofisticação: detalhes que fazem toda a
+                    diferença em seu espaço.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="fas fa-tools" style="font-size: 36px"></i>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    Restauração de Fachadas e Áreas Externas
+                  </h3>
+
+                  <p class="card-text">
+                    Fachadas renovadas, áreas externas valorizadas, beleza e
+                    durabilidade para seu imóvel.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - ///////////////////////////// projetos /////////////////////////////
+      -->
+
+        <section class="section class bg-dark has-bg-image" id="projects" aria-label="class">
+
+          <div class="container-slider">
+
+            <div class="service-subtitle">
+              <p
+                style="text-align: center; margin-top: 4rem"
+                id="service-label">
+                Projetos recentes
+              </p>
+            </div>
+
+            <div class="service-title">
+              <h2>Conheça alguns dos nossos projetos:</h2>
+            </div>
+
+            <div class="arrow-container">
+              <button class="arrow left-arrow" aria-label="Previous">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </button>
+
+              <ul class="class-list has-scrollbar">
+                <li class="scrollbar-item">
+                  <div class="class-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 416; --height: 240">
+                      <img
+                        src="imagens/services-1.jpg"
+                        width="416"
+                        height="240"
+                        loading="lazy"
+                        class="img-cover" />
+                    </figure>
+                    <div class="card-content">
+                      <div class="title-wrapper">
+                        <h3 class="h3">Pintura de portão</h3>
+                      </div>
+
+                      <p class="card-text">
+                        Pintura completa, tratamento anticorrosivo, cores
+                        personalizadas, acabamento durável e resistente.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="class-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 416; --height: 240">
+                      <img
+                        src="imagens/services-5.jpg"
+                        width="416"
+                        height="240"
+                        loading="lazy"
+                        class="img-cover" />
+                    </figure>
+                    <div class="card-content">
+                      <div class="title-wrapper">
+                        <h3 class="h3">Reforma de móveis</h3>
+                      </div>
+
+                      <p class="card-text">
+                        Restauração total, troca de tecidos, pintura nova,
+                        design renovado e moderno.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="class-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 416; --height: 240">
+                      <img
+                        src="imagens/services-3.jpg"
+                        width="416"
+                        height="240"
+                        loading="lazy"
+                        class="img-cover" />
+                    </figure>
+                    <div class="card-content">
+                      <div class="title-wrapper">
+                        <h3 class="h3">Pintura de quartos</h3>
+                      </div>
+                      <p class="card-text">
+                        Pintura de paredes, teto, aplicação de texturas, cores
+                        relaxantes e harmoniosas.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="class-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 416; --height: 240">
+                      <img
+                        src="imagens/services-4.jpg"
+                        width="416"
+                        height="240"
+                        loading="lazy"
+                        class="img-cover" />
+                    </figure>
+                    <div class="card-content">
+                      <div class="title-wrapper">
+                        <h3 class="h3">Pintura e acabamento</h3>
+                      </div>
+
+                      <p class="card-text">
+                        Pintura completa, aplicação de revestimentos, acabamento
+                        impecável, detalhes sofisticados e elegantes.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="class-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 416; --height: 240">
+                      <img
+                        src="imagens/services-6.jpg"
+                        width="416"
+                        height="240"
+                        loading="lazy"
+                        class="img-cover" />
+                    </figure>
+                    <div class="card-content">
+                      <div class="title-wrapper">
+                        <h3 class="h3">Pintura de fachada</h3>
+                      </div>
+                      <p class="card-text">
+                        Restauração da fachada, pintura externa, tratamento de
+                        fissuras, cores vivas e durabilidade.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <button class="arrow right-arrow" aria-label="Next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ////////////////////////////// resultados ///////////////////////////////////// -->
+
+        <section id="resultados">
+
+            <div class="results-subtitle">
+              <p style="text-align: center; margin-top: 4rem" id="service-label">
+                Nossos resultados
+              </p>
+            </div>
+
+            <div class="results-title">
+              <h2>Por que escolher nossa empresa?</h2>
+            </div>
+
+          <div class="counter-wrapper">
+
+            <div class="counter">
+              <i class="fas fa-users"></i>
+              <h1 class="count" data-target="75">0</h1>
+              <p>Projetos Concluídos</p>
+            </div>
+
+            <div class="counter">
+              <i class="fas fa-smile"></i>
+              <h1 class="count" data-target="58">0</h1>
+              <p>Clientes Satisfeitos</p>
+            </div>
+
+            <div class="counter">
+              <i class="fas fa-trophy"></i>
+              <h1 class="count" data-target="85">0</h1>
+              <p>Orçamentos realizados</p>
+            </div>
+
+            <div class="counter">
+              <i class="fas fa-list"></i>
+              <h1 class="count" data-target="7">0</h1>
+              <p>Anos de mercado</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ///////////////////////// contato ///////////////////////////////////// -->
+
+          <section class="contact-container" id="contact">
+
+            <div class="results-subtitle">
+              <p style="text-align: center; margin-top: 4rem" id="service-label">
+                Fale conosco
+              </p>
+            </div>
+
+            <div class="results-title">
+              <h2>Entre em contato conosco através do whatsapp ou de nossas redes sociais</h2> 
+            </div>
+    
+            <div class="contact-wrapper">
+                <!-- WhatsApp Card -->
+                <div class="contact-info">
+    
+                    <div class="whatsapp-content">
+                        <h1>Nosso contato</h1>
+                        <p class="whatsapp-text">Precisa de ajuda ou quer conversar sobre seu projeto? Estamos disponíveis
+                            no WhatsApp para tirar suas dúvidas!</p>
+                        <a href="https://wa.me/5511915847733" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Iniciar conversa
+                        </a>
+                    </div>
+    
+                    <!-- Social Media Card -->
+                    <div class="social-section">
+    
+                        <h3>Nossas redes sociais:</h3>
+    
+                        <div class="media-links">
+    
+                            <a href="#" class="media-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+    
+                            <a href="https://www.instagram.com/rag_oficial?igsh=YWtiN2pvdTU3a2Jj" class="media-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="contact-info">
+    
+                    <div class="info-card">
+    
+                        <h3>Informações de Contato</h3>
+    
+                        <div class="info-items">
+    
+                            <div class="info-item">
+                                <div class="info-icon">
+                                  <i class='fas fa-mobile-alt'></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Celular</h4>
+                                    <p>(11) 93453-8612</p>
+                                </div>
+                            </div>
+    
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Telefone</h4>
+                                    <p>+55 (11) 91584-7733</p>
+                                </div>
+                            </div>
+    
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>E-mail</h4>
+                                    <p>contato@exemplo.com.br</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+
+        <!--///////////////////// depoimentos ///////////////////////// -->
+
+      <section id="testemonials" class="reviews">
+
+        <div class="results-subtitle">
+          <p style="text-align: center; margin-top: 4rem" id="service-label">
+            Avaliações dos Clientes
+          </p>
+        </div>
+
+        <div class="results-title">
+          <h2>O que nossos clientes dizem sobre nós</h2> 
+        </div>
+
+        <div class="reviews-content">
+
+          <div class="testimonial-carousel">
+
+              <div class="single-testimonial-box">
+
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c1.jpeg" alt="clients">
+                  </div><!--/.testimonial-img-->
+
+                  <div class="testimonial-person">
+                    <h2>João O. S. Ribeiro</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+
+                <div class="testimonial-comment">
+                  <p>
+                    Excelente serviço! Estou muito satisfeito com a qualidade do trabalho.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c2.avif" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Maria A. Oliveira</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    A pintura do quarto do meu filho ficou perfeita! Cores lindas, acabamento impecável e profissional muito atencioso. Meu filho amou o resultado!
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c3.jpg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Carlos V. Pereira</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    Recomendo a todos, a experiência foi bacana e os resultados foram além das minhas expectativas.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c4.jpeg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>josé Silva</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    A restauração dos móveis da minha família ficou impecável, Trabalhador delicado e cuidadoso.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c5.jpeg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Adriano Lopes</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    Muito daora, gostei muito do trabalho, irei contratar a VAG novamente.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c6.jpeg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Alexandre P. da Costa</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    A equipe foi muito atenciosa, a reforma da minha cozinha ficou incrível! A VAG foi super atenciosa e profissional.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c7.jpg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Carlos Eduardo</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+                <div class="testimonial-comment">
+                  <p>
+                    Voltarei a fechar um serviço essa semana, gostei muito do trabalho, parabens a VAG.
+                  </p>
+                </div><!--/.testimonial-comment-->
+              </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+
+              <div class="single-testimonial-box">
+              <div class="testimonial-description">
+                <div class="testimonial-info">
+                  <div class="testimonial-img">
+                    <img src="imagens/c8.jpeg" alt="clients">
+                  </div><!--/.testimonial-img-->
+                  <div class="testimonial-person">
+                    <h2>Geraldo F. Bragança</h2>
+                    <div class="testimonial-person-star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div><!--/.testimonial-person-->
+                </div><!--/.testimonial-info-->
+
+                <div class="testimonial-comment">
+                  <p>
+                    O pessoal é bem tranquilo. A pintura do meu quarto ficou ótima, recomendo.
+                  </p>
+                </div><!--/.testimonial-comment-->
+
+              </div><!--/.testimonial-description-->
+
+            </div><!--/.single-testimonial-box-->
+
+          </div>
+
+        </div>
+
+      </section><!--/.reviews-->
+      <!--reviews end -->
+
+      </article>
+
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+          <img src="imagens/rag-logo.png" style="margin-left: -70px; width: 350px;">
+        </a>
+
+        <p class="footer-text" style="color: aliceblue;">
+          &copy; 2025 @edu_silva_art. <br> Todos os direitos reservados.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/rag_oficial?igsh=YWtiN2pvdTU3a2Jj" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Entre em Contato:</p>
+        </li>
+
+        <p style="color: aliceblue;">
+          Email:
+        </p>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">info@email.com</a>
+        </li>
+
+        <p style="color: aliceblue;">
+          Telefone:
+        </p>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">(11) 91584-7733</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Links rápidos:</p>
+        </li>
+
+        <li>
+          <a href="#home" class="footer-link">Início</a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="footer-link">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#services" class="footer-link"
+            >Serviços</a
+          >
+        </li>
+
+        <li>
+          <a href="#projects" class="footer-link"
+            >Projetos</a
+          >
+        </li>
+
+        <li>
+          <a href="#contact" class="footer-link" >Contato</a>
+        </li>
+
+        <li>
+          <a href="#testemonials" class="footer-link">Depoimentos</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Perguntas Frequentes:</p>
+
+        <ul class="faq-list">
+          <li>
+            <strong>Como posso entrar em contato?</strong>
+            <p>Você pode nos contatar através do e-mail: info@email.com, ou pelo telefone: (11) 91584-7733.</p>
+          </li>
+          <li>
+            <strong>Quais são os horários de atendimento?</strong>
+            <p>Estamos disponíveis de segunda a sexta, das 8h às 17h.</p>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+    <script src="script.js"></script>
+
+    <!--Custom JS-->
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="custom.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
