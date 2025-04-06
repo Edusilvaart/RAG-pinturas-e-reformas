@@ -257,8 +257,43 @@ body {
 .helpline-box .icon-box {
   background: var(--bright-navy-blue);
   padding: 6px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: var(--white);
+}
+
+.helpline-box i{
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -2px;
+}
+
+@media (max-width: 575px) {
+
+  .helpline-box .icon-box {
+    background: var(--bright-navy-blue);
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--white);
+  }
+
+  .helpline-box i{
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3px;
+  }
+
 }
 
 .helpline-box .icon-box ion-icon {
@@ -279,12 +314,8 @@ body {
 
 .search-btn,
 .nav-open-btn {
-  font-size: 30px;
+  font-size: 25px;
   color: inherit;
-}
-
-.search-btn {
-  font-size: 20px;
 }
 
 .header-bottom {
@@ -311,6 +342,19 @@ body {
   border-radius: 50%;
   font-size: 15px;
   transition: var(--transition);
+  width: 35px;
+  height: 35px;
+}
+
+.social-link i{
+  font-size: 18px;
+  margin-top: -1rem;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .social-link:is(:hover, :focus) {
@@ -1274,7 +1318,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 3.5rem; /* Ajuste o tamanho conforme necessário */
+  font-size: 3rem; /* Ajuste o tamanho conforme necessário */
   color: var(--orange-light); /* Cor das setas */
   transition: color 0.3s;
 }
@@ -1285,10 +1329,12 @@ body {
 
 .left-arrow {
   margin-right: 10px; /* Espaçamento entre a seta e os cards */
+  margin-left: 10px;
 }
 
 .right-arrow {
   margin-left: 10px; /* Espaçamento entre a seta e os cards */
+  margin-right: 10px;
 }
 
 /* Responsividade */
@@ -2342,3 +2388,114 @@ textarea.form-control {
     max-width: 1320px;
   }
 }
+
+/* /////////////////////////////// scrool to top /////////////////////////////// */
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 45px;
+  height: 45px;
+  background-color: var(--orange-light);
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link i {
+  font-size: 20px; 
+  text-decoration: none;
+  color: #000; 
+}
+
+.top-link {
+  text-decoration: none;
+}
+
+.screen-reader-text {
+  position: absolute;
+  clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+&:focus {
+  display: block;
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  clip-path: none;
+  background-color: #eee;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  font-size: 1em;
+  clip: auto !important;
+}
+
+/* /////////////// mediaqueries scroll /////////////// */
+
+@media (max-width: 600px) {
+  .top-link {
+      width: 40px; 
+      height: 40px;
+      bottom: -1em; 
+      right: -1.5em;  
+  }
+
+  .top-link i {
+      font-size: 18px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .top-link {
+      width: 35px; 
+      height: 35px; 
+      bottom: -1em; 
+      right: -1.5em;  
+  }
+
+  .top-link i {
+      font-size: 16px; 
+  }
+}
+
+@media (max-width: 300px) {
+  .top-link {
+      width: 30px; 
+      height: 30px; 
+      bottom: -1em; 
+      right: -1.5em; 
+  }
+
+  .top-link i {
+      font-size: 14px; 
+  }
+}
+
